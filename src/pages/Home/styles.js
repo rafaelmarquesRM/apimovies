@@ -5,8 +5,6 @@ export const Container = styled.div `
     text-align: center;
     margin-bottom: 1rem;
   }
-
-  
 `
 
 export const MovieList = styled.ul `
@@ -34,6 +32,7 @@ export const Movie = styled.li `
   span {
     font-size: 2rem;
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   a {
@@ -44,6 +43,3 @@ export const Movie = styled.li `
     transform: scale(1.1);
   }
 `
-
-
-
