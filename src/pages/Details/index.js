@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
-import { APIKey } from "../../config/key"
 import { Container } from "./styles"
 
 
@@ -13,7 +12,7 @@ function Details() {
   const image_path = 'https://image.tmdb.org/t/p/w500'
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${APIKey}&language=en-US`)
+    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`)
       .then(response => response.json())
       .then(data => {
 
